@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Rock Paper Scissors</h1>
+    <div class="game-area">
+      <!-- Computer Section -->
+      <div class="player computer">
+        <h2>Computer</h2>
+        <div class="choices">
+          <img src="images/rock.png" alt="Rock" class="choice" />
+          <img src="images/paper.png" alt="Paper" class="choice" />
+          <img src="images/scissors.png" alt="Scissors" class="choice" />
+        </div>
+        <p id="computer-score">computer Score: 0</p>
+      </div>
+
+      <!-- VS Symbol -->
+      <div class="vs-container">
+        <div class="results">
+          <div class="choice-display">
+            <h3>Computer Choice</h3>
+            <div id="selected-computer">
+              <img src="images/rock.png" alt="Computer Choice" />
+            </div>
+          </div>
+          <h2>VS</h2>
+          <div class="choice-display">
+            <h3>User Choice</h3>
+            <div id="selected-user">
+              <img src="images/rock.png" alt="User Choice" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- User Section -->
+      <div class="player user">
+        <h2>User</h2>
+        <div class="choices">
+          <img src="images/rock.png" alt="Rock" class="choice" data-choice="rock" />
+          <img src="images/paper.png" alt="Paper" class="choice" data-choice="paper" />
+          <img src="images/scissors.png" alt="Scissors" class="choice" data-choice="scissors" />
+        </div>
+        <p id="user-score">User Score: 0</p>
+      </div>
+    </div>
+
+    <!-- Final Result -->
+    <h2 id="final-result"></h2>
+
+    <!-- Restart Button -->
+    <button id="restart-btn">Restart Game</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
