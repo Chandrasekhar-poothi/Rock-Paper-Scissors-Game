@@ -8,17 +8,17 @@
 </head>
 <body>
   <div class="container">
-    <h1>Rock Paper Scissors</h1>
+    <h1>🎮 Rock Paper Scissors 🎮</h1>
     <div class="game-area">
       <!-- Computer Section -->
       <div class="player computer">
-        <h2>Computer</h2>
+        <h2>🤖 Computer</h2>
         <div class="choices">
           <img src="images/rock.png" alt="Rock" class="choice" />
           <img src="images/paper.png" alt="Paper" class="choice" />
           <img src="images/scissors.png" alt="Scissors" class="choice" />
         </div>
-        <p id="computer-score">computer Score: 0</p>
+        <p id="computer-score">Computer Score: 0</p>
       </div>
 
       <!-- VS Symbol -->
@@ -30,7 +30,7 @@
               <img src="images/rock.png" alt="Computer Choice" />
             </div>
           </div>
-          <h2>VS</h2>
+          <h2 class="vs-text"> VS </h2>
           <div class="choice-display">
             <h3>User Choice</h3>
             <div id="selected-user">
@@ -42,7 +42,7 @@
 
       <!-- User Section -->
       <div class="player user">
-        <h2>User</h2>
+        <h2>🧑 User</h2>
         <div class="choices">
           <img src="images/rock.png" alt="Rock" class="choice" data-choice="rock" />
           <img src="images/paper.png" alt="Paper" class="choice" data-choice="paper" />
@@ -53,10 +53,10 @@
     </div>
 
     <!-- Final Result -->
-    <h2 id="final-result"></h2>
+    <h2 id="final-result" class="final-result-text"></h2>
 
     <!-- Restart Button -->
-    <button id="restart-btn">Restart Game</button>
+    <button id="restart-btn"> Restart Game</button>
   </div>
   <script src="script.js"></script>
 </body>
